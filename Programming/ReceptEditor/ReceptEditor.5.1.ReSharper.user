@@ -1,0 +1,181 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="livetemplates.csharp.usevar">True</setting>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:AddRecept.cs" caret="925" fromTop="30" />
+      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:NewIngr.cs" caret="394" fromTop="17" />
+      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/d:Model/f:PR.cs" caret="316" fromTop="12" />
+      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/d:Model/f:Recept.cs" caret="328" fromTop="14" />
+      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/d:Model/f:Product.cs" caret="529" fromTop="23" />
+      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:MainForm.cs" caret="1255" fromTop="0" />
+      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:ReceptEngine.cs" caret="1041" fromTop="17" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:MainForm.cs" caret="546" fromTop="16" />
+      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/d:Model/f:Recept.cs" caret="328" fromTop="14" />
+      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/d:Model/f:Recept.cs" caret="263" fromTop="10" />
+      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:MainForm.cs" caret="1824" fromTop="33" />
+      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:MainForm.cs" caret="1581" fromTop="24" />
+      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/d:Model/f:Product.cs" caret="225" fromTop="9" />
+      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:MainForm.cs" caret="1266" fromTop="20" />
+      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/d:Model/f:PR.cs" caret="324" fromTop="12" />
+      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/d:Model/f:PR.cs" caret="316" fromTop="12" />
+      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:MainForm.cs" caret="811" fromTop="24" />
+      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:MainForm.cs" caret="621" fromTop="14" />
+      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:MainForm.cs" caret="621" fromTop="19" />
+      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:MainForm.cs" caret="411" fromTop="15" />
+      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:MainForm.cs" caret="621" fromTop="0" />
+      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:MainForm.cs" caret="2650" fromTop="24" />
+      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:MainForm.cs" caret="3485" fromTop="39" />
+      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:ReceptEngine.cs" caret="539" fromTop="19" />
+      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:ReceptEngine.cs" caret="6865" fromTop="19" />
+      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:MainForm.cs" caret="3259" fromTop="16" />
+      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:MainForm.cs" caret="3365" fromTop="21" />
+      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:MainForm.cs" caret="3731" fromTop="33" />
+      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:MainForm.cs" caret="1813" fromTop="36" />
+      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:MainForm.cs" caret="2458" fromTop="36" />
+      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:MainForm.cs" caret="1255" fromTop="18" />
+      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:ReceptEngine.cs" caret="413" fromTop="15" />
+      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:ReceptEngine.cs" caret="868" fromTop="29" />
+      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:ReceptEngine.cs" caret="213" fromTop="4" />
+      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:ReceptEngine.cs" caret="1667" fromTop="30" />
+      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:ReceptEngine.cs" caret="1236" fromTop="19" />
+      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:ReceptEngine.cs" caret="1041" fromTop="17" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="private" priority="4" />
+      <Item value="String`0" priority="9" />
+      <Item value="set" priority="1" />
+      <Item value="static" priority="0" />
+      <Item value="get" priority="0" />
+      <Item value="AboutBox1`0" priority="0" />
+      <Item value="box1" priority="1" />
+      <Item value="new" priority="5" />
+      <Item value="AboutBox1" priority="0" />
+      <Item value="true" priority="0" />
+      <Item value="AddRecept`0" priority="1" />
+      <Item value="addRecept" priority="1" />
+      <Item value="AddRecept" priority="0" />
+      <Item value="line" priority="0" />
+      <Item value="listBox1" priority="2" />
+      <Item value="parsRec" priority="4" />
+      <Item value="UTF32" priority="0" />
+      <Item value="List" priority="1" />
+      <Item value="using" priority="0" />
+      <Item value="List&lt;Repect&gt;" priority="0" />
+      <Item value="Recept`0" priority="1" />
+      <Item value="Recept" priority="1" />
+      <Item value="rNew" priority="9" />
+      <Item value="public" priority="2" />
+      <Item value="Product`0" priority="2" />
+      <Item value="PR`0" priority="1" />
+      <Item value="readPR`0" priority="0" />
+      <Item value="ReceptEngine`0" priority="2" />
+      <Item value="MainForm`0" priority="1" />
+      <Item value="mainForm" priority="7" />
+      <Item value="mForm" priority="1" />
+      <Item value="textBox1" priority="0" />
+      <Item value="text" priority="0" />
+      <Item value="foreach" priority="2" />
+      <Item value="recept" priority="2" />
+      <Item value="if" priority="4" />
+      <Item value="receptName" priority="0" />
+      <Item value="findRecept" priority="3" />
+      <Item value="break" priority="1" />
+      <Item value="setReceptText`0" priority="0" />
+      <Item value="engine" priority="0" />
+      <Item value="ReceptEngine" priority="0" />
+      <Item value="this" priority="0" />
+      <Item value="file" priority="0" />
+      <Item value="PrList" priority="0" />
+      <Item value="rp" priority="2" />
+      <Item value="getIngr`0" priority="0" />
+      <Item value="product" priority="2" />
+      <Item value="idProd" priority="0" />
+      <Item value="result" priority="1" />
+      <Item value="appendix" priority="0" />
+      <Item value="return" priority="0" />
+      <Item value="ingredients" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ReceptEditor.AboutBox1">
+      <Item value="Visible" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ReceptEditor.AddRecept">
+      <Item value="ShowDialog`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="Split`0" priority="0" />
+      <Item value="Equals`0" priority="2" />
+      <Item value="ToLower`0" priority="0" />
+      <Item value="Length" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.ListBox">
+      <Item value="Items" priority="1" />
+      <Item value="SelectedItem" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.ListBox+ObjectCollection">
+      <Item value="Add`0" priority="0" />
+      <Item value="Clear`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Text.Encoding">
+      <Item value="Default" priority="0" />
+      <Item value="UTF8" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ReceptEditor.Model.Recept">
+      <Item value="IdRecept" priority="1" />
+      <Item value="NameRecept" priority="2" />
+      <Item value="TextRecept" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="Add`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ReceptEditor.Model.Product">
+      <Item value="IdProduct" priority="1" />
+      <Item value="NameProduct" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ReceptEditor.Model.PR">
+      <Item value="IdP" priority="1" />
+      <Item value="IdR" priority="2" />
+      <Item value="Kolvo" priority="1" />
+      <Item value="Ei" priority="1" />
+      <Item value="Obyaz" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.TextBox">
+      <Item value="Text" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ReceptEditor.MainForm">
+      <Item value="ReceptList" priority="0" />
+      <Item value="setReceptName`0" priority="0" />
+      <Item value="setReceptText`0" priority="0" />
+      <Item value="PrList" priority="0" />
+      <Item value="ProductList" priority="0" />
+      <Item value="setReceptIng`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Object">
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.StreamReader">
+      <Item value="Close`0" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>

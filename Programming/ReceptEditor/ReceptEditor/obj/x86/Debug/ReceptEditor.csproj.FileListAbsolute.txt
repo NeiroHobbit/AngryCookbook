@@ -1,0 +1,11 @@
+D:\Hobbit\Work\ReceptEditor\ReceptEditor\bin\Debug\ReceptEditor.exe
+D:\Hobbit\Work\ReceptEditor\ReceptEditor\bin\Debug\ReceptEditor.pdb
+D:\Hobbit\Work\ReceptEditor\ReceptEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Hobbit\Work\ReceptEditor\ReceptEditor\obj\x86\Debug\ReceptEditor.Properties.Resources.resources
+D:\Hobbit\Work\ReceptEditor\ReceptEditor\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Hobbit\Work\ReceptEditor\ReceptEditor\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Hobbit\Work\ReceptEditor\ReceptEditor\obj\x86\Debug\ReceptEditor.exe
+D:\Hobbit\Work\ReceptEditor\ReceptEditor\obj\x86\Debug\ReceptEditor.pdb
+D:\Hobbit\Work\ReceptEditor\ReceptEditor\obj\x86\Debug\ReceptEditor.AddRecept.resources
+D:\Hobbit\Work\ReceptEditor\ReceptEditor\obj\x86\Debug\ReceptEditor.MainForm.resources
+D:\Hobbit\Work\ReceptEditor\ReceptEditor\obj\x86\Debug\ReceptEditor.NewIngr.resources
