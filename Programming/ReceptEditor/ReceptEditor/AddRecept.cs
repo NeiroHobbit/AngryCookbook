@@ -49,6 +49,26 @@ namespace ReceptEditor
         {
             if(textBox1.Text.Length>0 && textBox3.Text.Length>0 && listBox1.Items.Count>0)
             {
+                if(newReceptProducts.Count!=0)
+                {
+                    Recept recept = new Recept();
+                    recept.IdRecept = Guid.NewGuid().ToString();
+                    recept.NameRecept = textBox1.Text;
+                    recept.TextRecept = textBox3.Text;
+                    mainForm.ReceptList.Add(recept);
+
+                    foreach (var listItem in listBox1.Items)
+                    {
+                        PR pr = new PR();
+                        pr.IdP = listItem.ToString().Split('|')[0];
+                        pr.IdR = recept.IdRecept;
+                        pr.Kolvo = listItem.ToString().Split('|')[2];
+                        pr.Ei = listItem.ToString().Split('|')[3];
+                        pr.Obyaz = listItem.ToString().Split('|')[4];
+                        mainForm.PrList.Add(pr);
+                    }
+                    int a = 0;
+                }
                 
             }
         }
@@ -98,6 +118,22 @@ namespace ReceptEditor
                 RecomplitSource();
             }
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (listBox1.SelectedIndex>-1)
+            {
+                foreach (var product in mainForm.ProductList)
+                {
+                    if (product.NameProduct.Equals(listBox1.SelectedItem.ToString().Split('|')[1]))
+                    {
+                        mainForm.ProductList.Remove(product);
+                        listBox1.Items.Remove(listBox1.SelectedItem);
+                        break;
+                    }
+                }
+            }
         }
     }
 }

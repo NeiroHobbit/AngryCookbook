@@ -129,8 +129,32 @@ namespace ReceptEditor
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            setReceptName(listBox1.SelectedItem.ToString());
-            ReceptEngine engine = new ReceptEngine(this, listBox1.SelectedItem.ToString());
+            if (listBox1.SelectedIndex>-1)
+            {
+                setReceptName(listBox1.SelectedItem.ToString());
+                ReceptEngine engine = new ReceptEngine(this, listBox1.SelectedItem.ToString());
+            }
+            
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if(listBox1.SelectedIndex>-1)
+            {
+                String idRecept = "";
+                foreach (var recept in receptList)
+                {
+                    if (recept.NameRecept.Equals(listBox1.SelectedItem.ToString()))
+                    {
+                        receptList.Remove(recept);
+                        listBox1.Items.Remove(listBox1.SelectedItem);
+                        textBox1.Text = "";
+                        textBox2.Text = "";
+                        textBox3.Text = "";
+                        break;
+                    }
+                }
+            }
         }
 
 
