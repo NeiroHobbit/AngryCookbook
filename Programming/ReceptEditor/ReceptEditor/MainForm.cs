@@ -84,7 +84,7 @@ namespace ReceptEditor
 
         private void button1_Click(object sender, EventArgs e)
         {
-            AddRecept addRecept = new AddRecept();
+            AddRecept addRecept = new AddRecept(this);
             addRecept.ShowDialog();
         }
 
