@@ -151,6 +151,16 @@ namespace ReceptEditor
                         textBox1.Text = "";
                         textBox2.Text = "";
                         textBox3.Text = "";
+
+                        using (System.IO.StreamWriter file = new System.IO.StreamWriter(@"Recept"))
+                        {
+                            foreach (var rcpt in receptList)
+                            {
+                                file.WriteLine(rcpt.IdRecept + "|" + rcpt.NameRecept + "|" + rcpt.TextRecept);
+                            }
+                            file.Close();
+                        }
+
                         break;
                     }
                 }

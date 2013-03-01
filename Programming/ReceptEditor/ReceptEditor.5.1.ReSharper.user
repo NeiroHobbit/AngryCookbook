@@ -10,23 +10,14 @@
   <RecentFiles>
     <RecentFiles>
       <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:NewIngr.cs" caret="394" fromTop="17" />
-      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/d:Model/f:PR.cs" caret="316" fromTop="12" />
       <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/d:Model/f:Recept.cs" caret="328" fromTop="14" />
       <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/d:Model/f:Product.cs" caret="529" fromTop="23" />
       <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:ReceptEngine.cs" caret="366" fromTop="14" />
-      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:MainForm.cs" caret="2933" fromTop="33" />
-      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:AddRecept.cs" caret="1441" fromTop="22" />
+      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/d:Model/f:PR.cs" caret="0" fromTop="0" />
+      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:MainForm.cs" caret="3979" fromTop="19" />
+      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:AddRecept.cs" caret="4327" fromTop="26" />
     </RecentFiles>
     <RecentEdits>
-      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:MainForm.cs" caret="621" fromTop="0" />
-      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:MainForm.cs" caret="2654" fromTop="24" />
-      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:MainForm.cs" caret="3489" fromTop="39" />
-      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:ReceptEngine.cs" caret="539" fromTop="19" />
-      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:MainForm.cs" caret="3263" fromTop="16" />
-      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:MainForm.cs" caret="3369" fromTop="21" />
-      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:MainForm.cs" caret="3735" fromTop="33" />
-      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:MainForm.cs" caret="1813" fromTop="36" />
-      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:MainForm.cs" caret="2458" fromTop="36" />
       <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:MainForm.cs" caret="1255" fromTop="18" />
       <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:ReceptEngine.cs" caret="868" fromTop="29" />
       <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:ReceptEngine.cs" caret="213" fromTop="4" />
@@ -40,14 +31,23 @@
       <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:AddRecept.cs" caret="866" fromTop="23" />
       <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:AddRecept.cs" caret="993" fromTop="24" />
       <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:AddRecept.cs" caret="1441" fromTop="22" />
-      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:AddRecept.cs" caret="3070" fromTop="22" />
-      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:AddRecept.cs" caret="2272" fromTop="36" />
+      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:AddRecept.cs" caret="3862" fromTop="22" />
       <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:AddRecept.cs" caret="493" fromTop="14" />
-      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:AddRecept.cs" caret="3047" fromTop="34" />
-      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:AddRecept.cs" caret="2636" fromTop="24" />
-      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:AddRecept.cs" caret="2994" fromTop="31" />
+      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:AddRecept.cs" caret="3839" fromTop="34" />
+      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:AddRecept.cs" caret="3428" fromTop="24" />
+      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:AddRecept.cs" caret="3786" fromTop="31" />
       <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:AddRecept.cs" caret="1838" fromTop="8" />
       <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:AddRecept.cs" caret="1929" fromTop="12" />
+      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:AddRecept.cs" caret="4814" fromTop="32" />
+      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:AddRecept.cs" caret="4814" fromTop="26" />
+      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:AddRecept.cs" caret="2719" fromTop="32" />
+      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:AddRecept.cs" caret="3130" fromTop="39" />
+      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:AddRecept.cs" caret="3039" fromTop="30" />
+      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:AddRecept.cs" caret="4814" fromTop="25" />
+      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:AddRecept.cs" caret="5770" fromTop="28" />
+      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:MainForm.cs" caret="4893" fromTop="39" />
+      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:MainForm.cs" caret="4646" fromTop="33" />
+      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:AddRecept.cs" caret="4270" fromTop="24" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -92,12 +92,12 @@
       <Item value="readPR`0" priority="0" />
       <Item value="ReceptEngine`0" priority="2" />
       <Item value="MainForm`0" priority="3" />
-      <Item value="mainForm" priority="11" />
+      <Item value="mainForm" priority="12" />
       <Item value="mForm" priority="2" />
       <Item value="textBox1" priority="1" />
       <Item value="text" priority="0" />
-      <Item value="foreach" priority="5" />
-      <Item value="recept" priority="2" />
+      <Item value="foreach" priority="6" />
+      <Item value="recept" priority="6" />
       <Item value="if" priority="9" />
       <Item value="receptName" priority="0" />
       <Item value="findRecept" priority="3" />
@@ -106,11 +106,11 @@
       <Item value="engine" priority="0" />
       <Item value="ReceptEngine" priority="0" />
       <Item value="this" priority="1" />
-      <Item value="file" priority="0" />
+      <Item value="file" priority="2" />
       <Item value="PrList" priority="0" />
       <Item value="rp" priority="2" />
       <Item value="getIngr`0" priority="0" />
-      <Item value="product" priority="5" />
+      <Item value="product" priority="8" />
       <Item value="idProd" priority="0" />
       <Item value="result" priority="1" />
       <Item value="appendix" priority="0" />
@@ -138,6 +138,9 @@
       <Item value="textBox6" priority="0" />
       <Item value="checkBox1" priority="0" />
       <Item value="ob" priority="2" />
+      <Item value="Encoding`0" priority="0" />
+      <Item value="pr" priority="0" />
+      <Item value="receptList" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:ReceptEditor.AboutBox1">
       <Item value="Visible" priority="0" />
@@ -150,6 +153,7 @@
       <Item value="Equals`0" priority="3" />
       <Item value="ToLower`0" priority="0" />
       <Item value="Length" priority="3" />
+      <Item value="ToString`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Windows.Forms.ListBox">
       <Item value="Items" priority="3" />
@@ -162,12 +166,12 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Text.Encoding">
       <Item value="Default" priority="0" />
-      <Item value="UTF8" priority="0" />
+      <Item value="UTF8" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:ReceptEditor.Model.Recept">
-      <Item value="IdRecept" priority="1" />
-      <Item value="NameRecept" priority="2" />
-      <Item value="TextRecept" priority="1" />
+      <Item value="IdRecept" priority="2" />
+      <Item value="NameRecept" priority="3" />
+      <Item value="TextRecept" priority="2" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
       <Item value="Add`0" priority="4" />
@@ -175,25 +179,25 @@
       <Item value="Last`1" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:ReceptEditor.Model.Product">
-      <Item value="IdProduct" priority="3" />
-      <Item value="NameProduct" priority="6" />
+      <Item value="IdProduct" priority="4" />
+      <Item value="NameProduct" priority="7" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:ReceptEditor.Model.PR">
-      <Item value="IdP" priority="1" />
-      <Item value="IdR" priority="2" />
-      <Item value="Kolvo" priority="1" />
-      <Item value="Ei" priority="1" />
-      <Item value="Obyaz" priority="0" />
+      <Item value="IdP" priority="2" />
+      <Item value="IdR" priority="3" />
+      <Item value="Kolvo" priority="2" />
+      <Item value="Ei" priority="2" />
+      <Item value="Obyaz" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Windows.Forms.TextBox">
-      <Item value="Text" priority="6" />
+      <Item value="Text" priority="7" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:ReceptEditor.MainForm">
-      <Item value="ReceptList" priority="0" />
+      <Item value="ReceptList" priority="1" />
       <Item value="setReceptName`0" priority="0" />
       <Item value="setReceptText`0" priority="0" />
-      <Item value="PrList" priority="0" />
-      <Item value="ProductList" priority="3" />
+      <Item value="PrList" priority="1" />
+      <Item value="ProductList" priority="4" />
       <Item value="setReceptIng`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Object">
@@ -214,6 +218,10 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Windows.Forms.CheckBox">
       <Item value="Checked" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.StreamWriter">
+      <Item value="Encoding" priority="0" />
+      <Item value="Close`0" priority="0" />
     </ItemStatistics>
   </CompletionStatisticsManager>
 </Configuration>

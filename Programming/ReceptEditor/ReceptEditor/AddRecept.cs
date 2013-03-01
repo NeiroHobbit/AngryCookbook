@@ -67,7 +67,24 @@ namespace ReceptEditor
                         pr.Obyaz = listItem.ToString().Split('|')[4];
                         mainForm.PrList.Add(pr);
                     }
-                    int a = 0;
+
+                    using (System.IO.StreamWriter file = new System.IO.StreamWriter(@"Recept"))
+                    {
+                        foreach (var rcpt in mainForm.ReceptList)
+                        {
+                            file.WriteLine(rcpt.IdRecept + "|" + rcpt.NameRecept + "|" + rcpt.TextRecept);
+                        }
+                        file.Close();
+                    }
+
+                    using (System.IO.StreamWriter file = new System.IO.StreamWriter(@"PR"))
+                    {
+                        foreach (var pr in mainForm.PrList)
+                        {
+                            file.WriteLine(pr.IdP + "|" + pr.IdR + "|" + pr.Kolvo + "|" + pr.Ei + "|" + pr.Obyaz);
+                        }
+                        file.Close();
+                    }
                 }
                 
             }
@@ -102,7 +119,7 @@ namespace ReceptEditor
             bool isNew = true;
             foreach (var product in mainForm.ProductList)
             {
-                if (product.NameProduct.Equals(textBox4))
+                if (product.NameProduct.ToString().Equals(textBox4.Text))
                 {
                     isNew = false;
                     newReceptProducts.Add(product);
@@ -116,8 +133,22 @@ namespace ReceptEditor
                 mainForm.ProductList.Add(newProduct);
                 newReceptProducts.Add(newProduct);
                 RecomplitSource();
+
+                rewriteProductsFile();
             }
 
+        }
+
+        private void rewriteProductsFile()
+        {
+            using (System.IO.StreamWriter file = new System.IO.StreamWriter(@"Product"))
+            {
+                foreach (var product in mainForm.ProductList)
+                {
+                    file.WriteLine(product.IdProduct + "|" + product.NameProduct);
+                }
+                file.Close();
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -130,6 +161,7 @@ namespace ReceptEditor
                     {
                         mainForm.ProductList.Remove(product);
                         listBox1.Items.Remove(listBox1.SelectedItem);
+                        rewriteProductsFile();
                         break;
                     }
                 }
