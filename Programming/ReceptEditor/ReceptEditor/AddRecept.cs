@@ -85,6 +85,8 @@ namespace ReceptEditor
                         }
                         file.Close();
                     }
+                    mainForm.Init();
+                    Close();
                 }
                 
             }

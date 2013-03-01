@@ -12,21 +12,25 @@ namespace ReceptEditor
 {
     public partial class MainForm : Form
     {
-        private List<Recept> receptList;
-        private List<Product> productList;
-        private List<PR> PRList;
+        private List<Recept> receptList = new List<Recept>();
+        private List<Product> productList = new List<Product>();
+        private List<PR> PRList = new List<PR>();
 
         public MainForm()
         {
             InitializeComponent();
 
+            Init();
+        }
+
+        public void Init()
+        {
             clearAll();
             readRecepts();
             readProducts();
             readPR();
         }
 
-        
 
         private void readPR()
         {
@@ -125,6 +129,9 @@ namespace ReceptEditor
         private void clearAll()
         {
             listBox1.Items.Clear();
+            ReceptList.Clear();
+            ProductList.Clear();
+            PRList.Clear();
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
