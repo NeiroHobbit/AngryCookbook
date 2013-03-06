@@ -24,7 +24,8 @@ namespace ReceptEditor
                 }
             }
 
-            mainForm.setReceptText(findRecept.TextRecept);
+            String rec = findRecept.TextRecept.Replace("newline", "\r\n");
+            mainForm.setReceptText(rec);
 
             //TODO: необязательные ингредиенты в конце списка
             String ingredients = "";

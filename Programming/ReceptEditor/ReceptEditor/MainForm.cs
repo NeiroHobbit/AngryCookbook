@@ -148,7 +148,6 @@ namespace ReceptEditor
         {
             if(listBox1.SelectedIndex>-1)
             {
-                String idRecept = "";
                 foreach (var recept in receptList)
                 {
                     if (recept.NameRecept.Equals(listBox1.SelectedItem.ToString()))

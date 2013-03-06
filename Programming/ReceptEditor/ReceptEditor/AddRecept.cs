@@ -54,7 +54,7 @@ namespace ReceptEditor
                     Recept recept = new Recept();
                     recept.IdRecept = Guid.NewGuid().ToString();
                     recept.NameRecept = textBox1.Text;
-                    recept.TextRecept = textBox3.Text;
+                    recept.TextRecept = textBox3.Text.Replace("\r\n", "newline");
                     mainForm.ReceptList.Add(recept);
 
                     foreach (var listItem in listBox1.Items)
