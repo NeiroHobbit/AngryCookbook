@@ -10,6 +10,7 @@ namespace ReceptEditor.Model
         private String idRecept = "";
         private String nameRecept = "";
         private String textRecept = "";
+        private String typeRecept = "";
 
         public Recept()
         {
@@ -32,6 +33,12 @@ namespace ReceptEditor.Model
         {
             get { return textRecept; }
             set { textRecept = value; }
+        }
+
+        public string TypeRecept
+        {
+            get { return typeRecept; }
+            set { typeRecept = value; }
         }
     }
 }

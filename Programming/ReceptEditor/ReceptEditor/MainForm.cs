@@ -15,6 +15,7 @@ namespace ReceptEditor
         private List<Recept> receptList = new List<Recept>();
         private List<Product> productList = new List<Product>();
         private List<PR> PRList = new List<PR>();
+        private RTDict _rtDict;
 
         public MainForm()
         {
@@ -29,6 +30,7 @@ namespace ReceptEditor
             readRecepts();
             readProducts();
             readPR();
+            RtDict = new RTDict();
         }
 
 
@@ -49,7 +51,7 @@ namespace ReceptEditor
                 PrList.Add(rNew);
             }
             file.Close();
-            
+
         }
 
         private void readProducts()
@@ -80,6 +82,15 @@ namespace ReceptEditor
                 rNew.IdRecept = parsRec[0];
                 rNew.NameRecept = parsRec[1];
                 rNew.TextRecept = parsRec[2];
+                try
+                {
+                    rNew.TypeRecept = parsRec[3];
+                }
+                catch (Exception e)
+                {
+                    rNew.TypeRecept = "";
+                }
+
                 listBox1.Items.Add(parsRec[1]);
                 ReceptList.Add(rNew);
             }
@@ -110,6 +121,12 @@ namespace ReceptEditor
             set { PRList = value; }
         }
 
+        public RTDict RtDict
+        {
+            get { return _rtDict; }
+            set { _rtDict = value; }
+        }
+
         public void setReceptName(String text)
         {
             textBox1.Text = text;
@@ -125,6 +142,11 @@ namespace ReceptEditor
             textBox2.Text = text;
         }
 
+        public void setReceptType(String text)
+        {
+            textBox4.Text = text;
+        }
+
 
         private void clearAll()
         {
@@ -136,17 +158,17 @@ namespace ReceptEditor
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (listBox1.SelectedIndex>-1)
+            if (listBox1.SelectedIndex > -1)
             {
                 setReceptName(listBox1.SelectedItem.ToString());
                 ReceptEngine engine = new ReceptEngine(this, listBox1.SelectedItem.ToString());
             }
-            
+
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if(listBox1.SelectedIndex>-1)
+            if (listBox1.SelectedIndex > -1)
             {
                 foreach (var recept in receptList)
                 {

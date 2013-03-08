@@ -31,3 +31,14 @@ E:\AngryCookbook\Programming\ReceptEditor\ReceptEditor\obj\x86\Debug\ReceptEdito
 E:\AngryCookbook\Programming\ReceptEditor\ReceptEditor\obj\x86\Debug\ReceptEditor.Properties.Resources.resources
 E:\AngryCookbook\Programming\ReceptEditor\ReceptEditor\obj\x86\Debug\GenerateResource.read.1.tlog
 E:\AngryCookbook\Programming\ReceptEditor\ReceptEditor\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\AngryCookbook\AngryCookbook\Programming\ReceptEditor\ReceptEditor\obj\x86\Debug\ReceptEditor.exe
+E:\AngryCookbook\AngryCookbook\Programming\ReceptEditor\ReceptEditor\obj\x86\Debug\ReceptEditor.pdb
+E:\AngryCookbook\AngryCookbook\Programming\ReceptEditor\ReceptEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\AngryCookbook\AngryCookbook\Programming\ReceptEditor\ReceptEditor\obj\x86\Debug\ReceptEditor.AddRecept.resources
+E:\AngryCookbook\AngryCookbook\Programming\ReceptEditor\ReceptEditor\obj\x86\Debug\ReceptEditor.MainForm.resources
+E:\AngryCookbook\AngryCookbook\Programming\ReceptEditor\ReceptEditor\obj\x86\Debug\ReceptEditor.NewIngr.resources
+E:\AngryCookbook\AngryCookbook\Programming\ReceptEditor\ReceptEditor\obj\x86\Debug\ReceptEditor.Properties.Resources.resources
+E:\AngryCookbook\AngryCookbook\Programming\ReceptEditor\ReceptEditor\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\AngryCookbook\AngryCookbook\Programming\ReceptEditor\ReceptEditor\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\AngryCookbook\AngryCookbook\Programming\ReceptEditor\ReceptEditor\bin\Debug\ReceptEditor.exe
+E:\AngryCookbook\AngryCookbook\Programming\ReceptEditor\ReceptEditor\bin\Debug\ReceptEditor.pdb

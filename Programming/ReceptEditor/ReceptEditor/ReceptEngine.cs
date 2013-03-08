@@ -43,6 +43,15 @@ namespace ReceptEditor
             }
             mainForm.setReceptIng(ingredients);
 
+            if (findRecept.TypeRecept.Equals(""))
+            {
+                mainForm.setReceptType("");
+            }
+            else
+            {
+                //TODO: сделать обработку
+            }
+
         }
 
         private String getIngr(String idProd, String appendix)

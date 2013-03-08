@@ -61,6 +61,7 @@
     <Compile Include="Model\PR.cs" />
     <Compile Include="Model\Product.cs" />
     <Compile Include="Model\Recept.cs" />
+    <Compile Include="Model\RTDict.cs" />
     <Compile Include="NewIngr.cs">
       <SubType>Form</SubType>
     </Compile>

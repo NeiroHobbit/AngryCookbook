@@ -15,6 +15,7 @@ namespace ReceptEditor
         private AutoCompleteStringCollection source = new AutoCompleteStringCollection();
         private MainForm mainForm;
         private List<Product> newReceptProducts = new List<Product>();
+        private const String pr = "    ";
 
         public AddRecept()
         {
@@ -29,6 +30,27 @@ namespace ReceptEditor
 
             mainForm = mForm;
             RecomplitSource();
+            fillTypes();
+        }
+
+        private void fillTypes()
+        {
+            RTDict dict = mainForm.RtDict;
+
+            List<String[]> list = dict.getStringArray();
+
+            foreach (string[] strings in list)
+            {
+                String prefix = "";
+                if (strings[0].Length!=1)
+                {
+                    prefix = pr;
+                }
+                comboBox1.Items.Add(prefix + strings[1]);
+            }
+
+            
+
         }
 
         private void RecomplitSource()
