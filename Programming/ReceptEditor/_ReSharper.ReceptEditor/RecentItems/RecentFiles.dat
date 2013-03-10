@@ -4,28 +4,19 @@
     <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/d:Model/f:PR.cs" caret="316" fromTop="12" />
     <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/d:Model/f:Product.cs" caret="529" fromTop="23" />
     <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/d:Model/f:Recept.cs" caret="908" fromTop="40" />
-    <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/d:Model/f:RTDict.cs" caret="1767" fromTop="17" />
-    <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:ReceptEngine.cs" caret="587" fromTop="19" />
-    <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:MainForm.cs" caret="659" fromTop="27" />
-    <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:AddRecept.cs" caret="1202" fromTop="37" />
+    <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/d:Model/f:RTDict.cs" caret="2317" fromTop="26" />
+    <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:AddRecept.cs" caret="3333" fromTop="28" />
+    <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:MainForm.cs" caret="4505" fromTop="17" />
+    <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:ReceptEngine.cs" caret="1144" fromTop="24" />
   </RecentFiles>
   <RecentEdits>
-    <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:MainForm.cs" caret="4696" fromTop="22" />
-    <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:MainForm.cs" caret="4696" fromTop="25" />
-    <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:MainForm.cs" caret="4960" fromTop="37" />
-    <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/d:Model/f:Recept.cs" caret="311" fromTop="12" />
-    <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/d:Model/f:Recept.cs" caret="930" fromTop="41" />
-    <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/d:Model/f:Recept.cs" caret="908" fromTop="40" />
-    <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:MainForm.cs" caret="4696" fromTop="27" />
-    <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:MainForm.cs" caret="4696" fromTop="20" />
     <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:MainForm.cs" caret="2395" fromTop="17" />
     <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:MainForm.cs" caret="2726" fromTop="26" />
     <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/d:Model/f:RTDict.cs" caret="1173" fromTop="29" />
     <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/d:Model/f:RTDict.cs" caret="1030" fromTop="34" />
     <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:MainForm.cs" caret="2643" fromTop="19" />
     <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:MainForm.cs" caret="4015" fromTop="35" />
-    <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:ReceptEngine.cs" caret="1500" fromTop="42" />
-    <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:ReceptEngine.cs" caret="5814" fromTop="19" />
+    <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:ReceptEngine.cs" caret="5866" fromTop="19" />
     <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:MainForm.cs" caret="5705" fromTop="35" />
     <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/d:Model/f:RTDict.cs" caret="306" fromTop="11" />
     <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:MainForm.cs" caret="799" fromTop="32" />
@@ -40,5 +31,14 @@
     <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/d:Model/f:RTDict.cs" caret="814" fromTop="15" />
     <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:AddRecept.cs" caret="538" fromTop="8" />
     <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:AddRecept.cs" caret="1201" fromTop="37" />
+    <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:AddRecept.cs" caret="4161" fromTop="12" />
+    <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:AddRecept.cs" caret="4162" fromTop="51" />
+    <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:AddRecept.cs" caret="2501" fromTop="38" />
+    <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/d:Model/f:RTDict.cs" caret="2129" fromTop="43" />
+    <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/d:Model/f:RTDict.cs" caret="1821" fromTop="5" />
+    <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/d:Model/f:RTDict.cs" caret="2317" fromTop="26" />
+    <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:ReceptEngine.cs" caret="1549" fromTop="26" />
+    <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:AddRecept.cs" caret="3498" fromTop="30" />
+    <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:AddRecept.cs" caret="6879" fromTop="28" />
   </RecentEdits>
 </RecentFiles>
