@@ -71,46 +71,50 @@ namespace ReceptEditor
         {
             if(textBox1.Text.Length>0 && textBox3.Text.Length>0 && listBox1.Items.Count>0)
             {
-                if(newReceptProducts.Count!=0)
+                if (newReceptProducts.Count != 0)
                 {
-                    Recept recept = new Recept();
-                    recept.IdRecept = Guid.NewGuid().ToString();
-                    recept.NameRecept = textBox1.Text;
-                    recept.TextRecept = textBox3.Text.Replace("\r\n", "newline");
-                    mainForm.ReceptList.Add(recept);
-
-                    foreach (var listItem in listBox1.Items)
+                    if (comboBox1.SelectedIndex > -1)
                     {
-                        PR pr = new PR();
-                        pr.IdP = listItem.ToString().Split('|')[0];
-                        pr.IdR = recept.IdRecept;
-                        pr.Kolvo = listItem.ToString().Split('|')[2];
-                        pr.Ei = listItem.ToString().Split('|')[3];
-                        pr.Obyaz = listItem.ToString().Split('|')[4];
-                        mainForm.PrList.Add(pr);
-                    }
+                        Recept recept = new Recept();
+                        recept.IdRecept = Guid.NewGuid().ToString();
+                        recept.NameRecept = textBox1.Text;
+                        recept.TextRecept = textBox3.Text.Replace("\r\n", "newline");
+                        recept.TypeRecept = mainForm.RtDict.getKeyByValue(comboBox1.SelectedItem.ToString().Trim());
+                        mainForm.ReceptList.Add(recept);
 
-                    using (System.IO.StreamWriter file = new System.IO.StreamWriter(@"Recept"))
-                    {
-                        foreach (var rcpt in mainForm.ReceptList)
+                        foreach (var listItem in listBox1.Items)
                         {
-                            file.WriteLine(rcpt.IdRecept + "|" + rcpt.NameRecept + "|" + rcpt.TextRecept);
+                            PR pr = new PR();
+                            pr.IdP = listItem.ToString().Split('|')[0];
+                            pr.IdR = recept.IdRecept;
+                            pr.Kolvo = listItem.ToString().Split('|')[2];
+                            pr.Ei = listItem.ToString().Split('|')[3];
+                            pr.Obyaz = listItem.ToString().Split('|')[4];
+                            mainForm.PrList.Add(pr);
                         }
-                        file.Close();
-                    }
 
-                    using (System.IO.StreamWriter file = new System.IO.StreamWriter(@"PR"))
-                    {
-                        foreach (var pr in mainForm.PrList)
+                        using (System.IO.StreamWriter file = new System.IO.StreamWriter(@"Recept"))
                         {
-                            file.WriteLine(pr.IdP + "|" + pr.IdR + "|" + pr.Kolvo + "|" + pr.Ei + "|" + pr.Obyaz);
+                            foreach (var rcpt in mainForm.ReceptList)
+                            {
+                                file.WriteLine(rcpt.IdRecept + "|" + rcpt.NameRecept + "|" + rcpt.TextRecept + "|" + rcpt.TypeRecept);
+                            }
+                            file.Close();
                         }
-                        file.Close();
+
+                        using (System.IO.StreamWriter file = new System.IO.StreamWriter(@"PR"))
+                        {
+                            foreach (var pr in mainForm.PrList)
+                            {
+                                file.WriteLine(pr.IdP + "|" + pr.IdR + "|" + pr.Kolvo + "|" + pr.Ei + "|" + pr.Obyaz);
+                            }
+                            file.Close();
+                        }
+                        mainForm.Init();
+                        Close();
                     }
-                    mainForm.Init();
-                    Close();
                 }
-                
+
             }
         }
 

@@ -62,5 +62,28 @@ namespace ReceptEditor.Model
                 
             return list;
         }
+
+        public String getKeyByValue(String value)
+        {
+            String key = "";
+            foreach (KeyValuePair<string, string> keyValuePair in typeDictionary)
+            {
+                if (keyValuePair.Value.Equals(value))
+                {
+                    key = keyValuePair.Key;
+                    break;
+                }
+            }
+
+            return key;
+        }
+
+        public String getValueByKey(String key)
+        {
+            String value = "";
+            value = typeDictionary[key];
+
+            return value;
+        }
     }
 }

@@ -49,7 +49,7 @@ namespace ReceptEditor
             }
             else
             {
-                //TODO: сделать обработку
+                mainForm.setReceptType(mainForm.RtDict.getValueByKey(findRecept.TypeRecept));
             }
 
         }
