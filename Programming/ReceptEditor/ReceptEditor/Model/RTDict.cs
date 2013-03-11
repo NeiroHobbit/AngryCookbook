@@ -33,9 +33,8 @@ namespace ReceptEditor.Model
                     }
                     addType(key, value);
                 }
-                catch (Exception)
+                catch (Exception e)
                 {
-                    
                     throw;
                 }
  

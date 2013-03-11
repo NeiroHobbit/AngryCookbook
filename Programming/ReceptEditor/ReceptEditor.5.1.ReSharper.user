@@ -10,15 +10,15 @@
   <RecentFiles>
     <RecentFiles>
       <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:NewIngr.cs" caret="394" fromTop="17" />
-      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/d:Model/f:Recept.cs" caret="328" fromTop="14" />
-      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/d:Model/f:Product.cs" caret="529" fromTop="23" />
       <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:ReceptEngine.cs" caret="366" fromTop="14" />
-      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/d:Model/f:PR.cs" caret="0" fromTop="0" />
       <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:AddRecept.cs" caret="4283" fromTop="19" />
       <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:MainForm.cs" caret="2907" fromTop="36" />
+      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/d:Model/f:Product.cs" caret="531" fromTop="24" />
+      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/d:Model/f:Recept.cs" caret="317" fromTop="11" />
+      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/d:Model/f:PR.cs" caret="151" fromTop="7" />
+      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/d:Model/f:RTDict.cs" caret="154" fromTop="7" />
     </RecentFiles>
     <RecentEdits>
-      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:ReceptEngine.cs" caret="1667" fromTop="30" />
       <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:ReceptEngine.cs" caret="1236" fromTop="19" />
       <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:ReceptEngine.cs" caret="1041" fromTop="17" />
       <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:ReceptEngine.cs" caret="366" fromTop="14" />
@@ -48,6 +48,7 @@
       <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:MainForm.cs" caret="574" fromTop="22" />
       <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:AddRecept.cs" caret="3168" fromTop="13" />
       <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/f:MainForm.cs" caret="473" fromTop="15" />
+      <File id="D445F30D-F8FB-4949-BD0F-F04909FA0E18/d:Model/f:RTDict.cs" caret="1105" fromTop="36" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -147,6 +148,7 @@
       <Item value="PRList" priority="0" />
       <Item value="List&lt;Recept&gt;" priority="0" />
       <Item value="List&lt;PR&gt;" priority="0" />
+      <Item value="e" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:ReceptEditor.AboutBox1">
       <Item value="Visible" priority="0" />
