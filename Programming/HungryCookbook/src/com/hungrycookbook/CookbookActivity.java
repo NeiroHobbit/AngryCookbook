@@ -4,12 +4,16 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
+import com.Model.ReceptEngine;
+
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.widget.ExpandableListView;
 import android.widget.SimpleExpandableListAdapter;
 
 public class CookbookActivity extends FragmentActivity {
+	
+	private ReceptEngine engine;
 
 	// названия компаний (групп)
 	String[] groups = new String[] { "HTC", "Samsung", "LG" };
@@ -40,33 +44,28 @@ public class CookbookActivity extends FragmentActivity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_cookbook);
+		
+		engine = ReceptEngine.getInstance(getAssets());
+		
 
-		// заполняем коллекцию групп из массива с названиями групп
 		groupData = new ArrayList<Map<String, String>>();
 		for (String group : groups) {
-			// заполняем список аттрибутов для каждой группы
 			m = new HashMap<String, String>();
-			m.put("groupName", group); // имя компании
+			m.put("groupName", group);
 			groupData.add(m);
 		}
 
-		// список аттрибутов групп для чтения
 		String groupFrom[] = new String[] { "groupName" };
-		// список ID view-элементов, в которые будет помещены аттрибуты групп
 		int groupTo[] = new int[] { android.R.id.text1 };
 
-		// создаем коллекцию для коллекций элементов
 		childData = new ArrayList<ArrayList<Map<String, String>>>();
 
-		// создаем коллекцию элементов для первой группы
 		childDataItem = new ArrayList<Map<String, String>>();
-		// заполняем список аттрибутов для каждого элемента
 		for (String phone : phonesHTC) {
 			m = new HashMap<String, String>();
-			m.put("phoneName", phone); // название телефона
+			m.put("phoneName", phone);
 			childDataItem.add(m);
 		}
-		// добавляем в коллекцию коллекций
 		childData.add(childDataItem);
 
 		// создаем коллекцию элементов для второй группы

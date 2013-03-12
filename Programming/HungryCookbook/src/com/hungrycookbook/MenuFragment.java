@@ -1,11 +1,11 @@
 package com.hungrycookbook;
 
-import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Toast;
@@ -22,14 +22,15 @@ public class MenuFragment extends Fragment {
 
 		Button menu_button = (Button) rootView
 				.findViewById(R.id.button_cookbook);
-		menu_button.setOnClickListener(new OnClickListener() {
+		menu_button.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View button) {
-				Toast.makeText(rootView.getContext(), "You clicked the button",
-						Toast.LENGTH_SHORT).show();
+				Intent i = new Intent(rootView.getContext(), CookbookActivity.class);
+				rootView.getContext().startActivity(i);
+
 			}
 		});
 
-		return inflater.inflate(R.layout.fragment_menu, container, false);
+		return rootView;
 
 	}
 
