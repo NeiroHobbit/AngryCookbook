@@ -4,15 +4,16 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.Model.ReceptEngine;
-
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.widget.ExpandableListView;
 import android.widget.SimpleExpandableListAdapter;
 
+import com.Model.Recept;
+import com.Model.ReceptEngine;
+
 public class CookbookActivity extends FragmentActivity {
-	
+
 	private ReceptEngine engine;
 
 	// названия компаний (групп)
@@ -35,6 +36,9 @@ public class CookbookActivity extends FragmentActivity {
 	ArrayList<ArrayList<Map<String, String>>> childData;
 	// в итоге получится childData = ArrayList<childDataItem>
 
+	ArrayList<Map<String, String>> receptNameItem;
+	ArrayList<ArrayList<Map<String, String>>> receptNames;
+
 	// список аттрибутов группы или элемента
 	Map<String, String> m;
 
@@ -44,62 +48,49 @@ public class CookbookActivity extends FragmentActivity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_cookbook);
-		
+
 		engine = ReceptEngine.getInstance(getAssets());
-		
 
 		groupData = new ArrayList<Map<String, String>>();
-		for (String group : groups) {
+		for (String type : engine.getTypes()) {
 			m = new HashMap<String, String>();
-			m.put("groupName", group);
+			m.put("groupName", type);
 			groupData.add(m);
 		}
 
 		String groupFrom[] = new String[] { "groupName" };
 		int groupTo[] = new int[] { android.R.id.text1 };
 
-		childData = new ArrayList<ArrayList<Map<String, String>>>();
+		fillType("A");
+		fillType("B");
+		fillType("C");
+		fillType("D");
+		fillType("E");
+		fillType("F");
+		fillType("G");
 
-		childDataItem = new ArrayList<Map<String, String>>();
-		for (String phone : phonesHTC) {
-			m = new HashMap<String, String>();
-			m.put("phoneName", phone);
-			childDataItem.add(m);
-		}
-		childData.add(childDataItem);
-
-		// создаем коллекцию элементов для второй группы
-		childDataItem = new ArrayList<Map<String, String>>();
-		for (String phone : phonesSams) {
-			m = new HashMap<String, String>();
-			m.put("phoneName", phone);
-			childDataItem.add(m);
-		}
-		childData.add(childDataItem);
-
-		// создаем коллекцию элементов для третьей группы
-		childDataItem = new ArrayList<Map<String, String>>();
-		for (String phone : phonesLG) {
-			m = new HashMap<String, String>();
-			m.put("phoneName", phone);
-			childDataItem.add(m);
-		}
-		childData.add(childDataItem);
-
-		// список аттрибутов элементов для чтения
-		String childFrom[] = new String[] { "phoneName" };
-		// список ID view-элементов, в которые будет помещены аттрибуты
-		// элементов
+		String childFrom[] = new String[] { "receptName" };
 		int childTo[] = new int[] { android.R.id.text1 };
 
 		SimpleExpandableListAdapter adapter = new SimpleExpandableListAdapter(
 				this, groupData,
 				android.R.layout.simple_expandable_list_item_1, groupFrom,
-				groupTo, childData, android.R.layout.simple_list_item_1,
+				groupTo, receptNames, android.R.layout.simple_list_item_1,
 				childFrom, childTo);
 
 		elvMain = (ExpandableListView) findViewById(R.id.listView_types);
 		elvMain.setAdapter(adapter);
 
+	}
+
+	private void fillType(String type) {
+		receptNames = new ArrayList<ArrayList<Map<String, String>>>();
+		receptNameItem = new ArrayList<Map<String, String>>();
+		for (Recept recept : engine.getReceptsByType(type)) {
+			m = new HashMap<String, String>();
+			m.put("receptName", recept.getNameRecept());
+			receptNameItem.add(m);
+		}
+		receptNames.add(receptNameItem);
 	}
 }

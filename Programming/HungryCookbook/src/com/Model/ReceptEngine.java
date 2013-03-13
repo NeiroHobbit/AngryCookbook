@@ -57,7 +57,7 @@ public class ReceptEngine {
 			BufferedReader br = new BufferedReader(new InputStreamReader(is,
 					"UTF-8"));
 			while ((newLine = br.readLine()) != null) {
-				String[] parts = newLine.split("|");
+				String[] parts = newLine.split("\\|");
 				Recept recept = new Recept();
 				recept.setIdRecept(parts[0]);
 				recept.setNameRecept(parts[1]);
@@ -114,6 +114,22 @@ public class ReceptEngine {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+	}
+
+	public ArrayList<String> getTypes() {
+		return dict.getTypes();
+	}
+
+	public ArrayList<Recept> getReceptsByType(String type) {
+		ArrayList<Recept> rl = new ArrayList<Recept>();
+
+		for (Recept recept : arrayRecept) {
+			if (recept.getTypeRecept().substring(0, 1).equals(type)) {
+				rl.add(recept);
+			}
+		}
+
+		return rl;
 	}
 
 }

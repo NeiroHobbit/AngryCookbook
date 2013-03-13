@@ -24,8 +24,9 @@ public final class R {
         public static final int companyNameTitle=0x7f070004;
         public static final int listView_types=0x7f070000;
         public static final int loadTitle=0x7f070003;
-        public static final int menu_settings=0x7f07000a;
+        public static final int menu_settings=0x7f07000b;
         public static final int sacrLogo=0x7f070002;
+        public static final int textInfo2=0x7f07000a;
         public static final int textView1=0x7f070005;
     }
     public static final class layout {
