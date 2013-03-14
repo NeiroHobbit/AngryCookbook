@@ -7,8 +7,7 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.view.Menu;
-import android.view.View;
-import android.widget.TextView;
+import android.view.MenuItem;
 import android.widget.Toast;
 
 public class MainActivity extends FragmentActivity {
@@ -36,6 +35,15 @@ public class MainActivity extends FragmentActivity {
 	public boolean onCreateOptionsMenu(Menu menu) {
 		getMenuInflater().inflate(R.menu.activity_main, menu);
 		return true;
+	}
+
+	public boolean onOptionsItemSelected(MenuItem item) {
+
+		if (item.getItemId() == R.id.menu_exit) {
+			Toast.makeText(this, "Я не умею выходить", Toast.LENGTH_LONG).show();
+		} 
+
+		return super.onOptionsItemSelected(item);
 	}
 
 }

@@ -20,8 +20,7 @@ public class MenuFragment extends Fragment {
 
 		rootView = inflater.inflate(R.layout.fragment_menu, container, false);
 
-		Button menu_button = (Button) rootView
-				.findViewById(R.id.button_cookbook);
+		Button menu_button = (Button) rootView.findViewById(R.id.button_cookbook);
 		menu_button.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View button) {
 				Intent i = new Intent(rootView.getContext(), CookbookActivity.class);

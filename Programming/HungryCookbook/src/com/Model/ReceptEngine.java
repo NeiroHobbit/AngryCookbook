@@ -128,8 +128,6 @@ public class ReceptEngine {
 				rl.add(recept);
 			}
 		}
-
 		return rl;
 	}
-
 }
