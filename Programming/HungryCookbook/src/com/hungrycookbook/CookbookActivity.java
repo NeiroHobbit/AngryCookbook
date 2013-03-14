@@ -50,6 +50,7 @@ public class CookbookActivity extends FragmentActivity {
 		setContentView(R.layout.activity_cookbook);
 
 		engine = ReceptEngine.getInstance(getAssets());
+		receptNames = new ArrayList<ArrayList<Map<String, String>>>();
 
 		groupData = new ArrayList<Map<String, String>>();
 		for (String type : engine.getTypes()) {
@@ -84,7 +85,6 @@ public class CookbookActivity extends FragmentActivity {
 	}
 
 	private void fillType(String type) {
-		receptNames = new ArrayList<ArrayList<Map<String, String>>>();
 		receptNameItem = new ArrayList<Map<String, String>>();
 		for (Recept recept : engine.getReceptsByType(type)) {
 			m = new HashMap<String, String>();

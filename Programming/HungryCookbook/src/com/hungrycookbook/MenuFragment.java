@@ -13,8 +13,7 @@ import android.widget.Toast;
 public class MenuFragment extends Fragment {
 
 	private View rootView;
-	TextView info2;
-
+	
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
@@ -39,16 +38,6 @@ public class MenuFragment extends Fragment {
 		super.onSaveInstanceState(outState);
 	}
 	
-	public void onClickInfo(View v)	{
-		
-		info2 = (TextView) v.findViewById(R.id.textInfo2);
-		info2.setText("Нажата кнопка info, Шурик все поченил");
-		
-	    // выводим сообщение
-	    Toast.makeText(v.getContext(), "Зачем вы нажали?", Toast.LENGTH_SHORT).show();
-	    
-	    
-	    
-	} 
+
 	
 }
