@@ -7,8 +7,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.TextView;
-import android.widget.Toast;
 
 public class MenuFragment extends Fragment {
 
@@ -28,7 +26,16 @@ public class MenuFragment extends Fragment {
 
 			}
 		});
-
+		Button info_button = (Button) rootView.findViewById(R.id.button_info);
+		info_button.setOnClickListener(new View.OnClickListener() {
+			
+			public void onClick(View v) {
+				Intent intent = new Intent(rootView.getContext(), InfoActivity.class);
+				startActivity(intent);
+				
+			}
+		});
+		
 		return rootView;
 	}
 	

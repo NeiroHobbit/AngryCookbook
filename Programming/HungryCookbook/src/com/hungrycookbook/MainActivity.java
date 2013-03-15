@@ -39,10 +39,11 @@ public class MainActivity extends FragmentActivity {
 
 	public boolean onOptionsItemSelected(MenuItem item) {
 
-		if (item.getItemId() == R.id.menu_exit) {
-			Toast.makeText(this, "Я не умею выходить", Toast.LENGTH_LONG).show();
-		} 
-
+		switch (item.getItemId()) {
+		case R.id.menu_exit:
+			finish();
+			break;
+		}
 		return super.onOptionsItemSelected(item);
 	}
 
