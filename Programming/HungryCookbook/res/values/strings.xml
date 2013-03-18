@@ -9,5 +9,6 @@
     <string name="action_settings">Settings</string>
     <string name="info_company">Приложение создано в студии Шурик и Co. У нас самые круты программисты и самые низкие цены!</string>
     <string name="long_live">Жыве Беларусь!</string>
+    <string name="title_activity_search">SearchActivity</string>
 
 </resources>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#13cecc"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <Helpers.Sliding
+        android:id="@+id/sliding1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:gravity="left"
+        android:orientation="vertical"
+        android:padding="1dp" >
+
+        <CheckBox
+            android:id="@+id/check1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Первые блюда"
+            android:textColor="#FFFFFF" />
+
+        <CheckBox
+            android:id="@+id/check2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Вторые блюда"
+            android:textColor="#FFFFFF" />
+
+        <CheckBox
+            android:id="@+id/check3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Салаты"
+            android:textColor="#FFFFFF" />
+
+        <CheckBox
+            android:id="@+id/check4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Закуски"
+            android:textColor="#FFFFFF" />
+
+        <CheckBox
+            android:id="@+id/check5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Выпечка"
+            android:textColor="#FFFFFF" />
+
+        <CheckBox
+            android:id="@+id/check6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Соусы"
+            android:textColor="#FFFFFF" />
+
+        <CheckBox
+            android:id="@+id/check7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Десерты"
+            android:textColor="#FFFFFF" />
+    </Helpers.Sliding>
+
+    <Button
+        android:id="@+id/show1"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+    </FrameLayout>
+
+</LinearLayout>

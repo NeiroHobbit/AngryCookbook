@@ -27,6 +27,10 @@
             android:name="com.hungrycookbook.InfoActivity"
             android:label="@string/title_activity_info" >
         </activity>
+        <activity
+            android:name="com.hungrycookbook.SearchActivity"
+            android:label="@string/title_activity_search" >
+        </activity>
     </application>
 
 </manifest>
