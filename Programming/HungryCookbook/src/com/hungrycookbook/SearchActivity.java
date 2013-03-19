@@ -10,7 +10,7 @@ import android.widget.CheckBox;
 
 public class SearchActivity extends Activity {
 
-	private int key = 0;
+	private boolean key = false;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -25,12 +25,12 @@ public class SearchActivity extends Activity {
 
 			@Override
 			public void onClick(View arg0) {
-				if (key == 0) {
-					key = 1;
+				if (!key) {
+					key = true;
 					popup.setVisibility(View.VISIBLE);
 					// btn.setBackgroundResource(R.drawable.next_item);
-				} else if (key == 1) {
-					key = 0;
+				} else if (key) {
+					key = false;
 					popup.setVisibility(View.GONE);
 					// btn.setBackgroundResource(R.drawable.next_item);
 				}

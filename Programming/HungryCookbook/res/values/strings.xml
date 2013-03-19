@@ -10,5 +10,13 @@
     <string name="info_company">Приложение создано в студии Шурик и Co. У нас самые круты программисты и самые низкие цены!</string>
     <string name="long_live">Жыве Беларусь!</string>
     <string name="title_activity_search">SearchActivity</string>
+    <string name="title_activity_another_cookbook">AnotherCookbookActivity</string>
+    <string name="title_section1">Первые блюда</string>
+    <string name="title_section2">Вторые блюда</string>
+    <string name="title_section3">Салаты</string>
+    <string name="title_section4">Закуски</string>
+    <string name="title_section5">Выпечка</string>
+    <string name="title_section6">Соусы</string>
+    <string name="title_section7">Десерты</string>
 
 </resources>

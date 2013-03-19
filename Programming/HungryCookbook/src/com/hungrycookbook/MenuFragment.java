@@ -22,8 +22,10 @@ public class MenuFragment extends Fragment {
 				.findViewById(R.id.button_cookbook);
 		menu_button.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View button) {
+				// Intent i = new Intent(rootView.getContext(),
+				// CookbookActivity.class);
 				Intent i = new Intent(rootView.getContext(),
-						CookbookActivity.class);
+						AnotherCookbookActivity.class);
 				rootView.getContext().startActivity(i);
 
 			}
@@ -38,8 +40,9 @@ public class MenuFragment extends Fragment {
 
 			}
 		});
-		
-		Button search_button = (Button) rootView.findViewById(R.id.button_search);
+
+		Button search_button = (Button) rootView
+				.findViewById(R.id.button_search);
 		search_button.setOnClickListener(new View.OnClickListener() {
 
 			public void onClick(View v) {

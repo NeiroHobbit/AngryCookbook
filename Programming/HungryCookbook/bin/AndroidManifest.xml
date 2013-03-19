@@ -6,7 +6,7 @@
 
     <uses-sdk
         android:minSdkVersion="4"
-        android:targetSdkVersion="15" />
+        android:targetSdkVersion="17" />
 
     <application
         android:icon="@drawable/ic_launcher"
@@ -30,6 +30,10 @@
         <activity
             android:name="com.hungrycookbook.SearchActivity"
             android:label="@string/title_activity_search" >
+        </activity>
+        <activity
+            android:name="com.hungrycookbook.AnotherCookbookActivity"
+            android:label="@string/title_activity_another_cookbook" >
         </activity>
     </application>
 
