@@ -1,8 +1,10 @@
 package com.hungrycookbook;
 
+import java.util.ArrayList;
 import java.util.Locale;
 
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
@@ -17,6 +19,7 @@ import android.widget.LinearLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
 
+import com.Model.Recept;
 import com.Model.ReceptEngine;
 
 public class AnotherCookbookActivity extends FragmentActivity {
@@ -133,33 +136,52 @@ public class AnotherCookbookActivity extends FragmentActivity {
 			View rootView = inflater.inflate(R.layout.fragment_receptlist,
 					container, false);
 			int m = getArguments().getInt(ARG_SECTION_NUMBER);
+			ReceptEngine engine = ReceptEngine.getInstance(getActivity()
+					.getAssets());
 
 			LinearLayout linLay = (LinearLayout) rootView
 					.findViewById(R.id.listStack);
-			
+
 			int padd = 5;
 			LinearLayout ll = new LinearLayout(getActivity());
 			ll.setOrientation(LinearLayout.VERTICAL);
 			ll.setPadding(padd, padd, padd, padd);
-			
-			TextView tv1 = new TextView(getActivity());
-			tv1.setText("sdfgdfgdfg");
-			TextView tv2 = new TextView(getActivity());
-			tv2.setText("ruhoieruhtuhturotuhy dlgbrot ert ret er teort");
-			ll.addView(tv1);
-			ll.addView(tv2);
-			View v = new View(getActivity());
-			v.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT, 1));
-			v.setBackgroundColor(Color.rgb(51, 51, 51));
 
-			ll.addView(v);
-			
+			ArrayList<Recept> recepts = engine.getReceptsByType(engine
+					.digitToStringRT(m));
 
-			
+			for (Recept recept : recepts) {
+				TextView tv1 = new TextView(getActivity());
+				tv1.setTypeface(null, Typeface.BOLD);
+				tv1.setText(recept.getNameRecept());
+				TextView tv2 = new TextView(getActivity());
+
+				String[] receptTextArray = recept.getTextRecept()
+						.replace("newline", " ").split(" ");
+				String receptText = "";
+				for (int i = 0; i < 30 && receptTextArray.length > i + 1; i++) {
+					receptText += receptTextArray[i];
+					if (i + 1 < 30) {
+						receptText += " ";
+					}
+				}
+				receptText += "...";
+
+				tv2.setText(receptText);
+				ll.addView(tv1);
+				ll.addView(tv2);
+				View v = new View(getActivity());
+				v.setLayoutParams(new TableRow.LayoutParams(
+						TableRow.LayoutParams.MATCH_PARENT, 1));
+				v.setBackgroundColor(Color.rgb(51, 51, 51));
+				ll.addView(v);
+			}
+
 			linLay.addView(ll);
 
 			return rootView;
 		}
+
 	}
 
 }
