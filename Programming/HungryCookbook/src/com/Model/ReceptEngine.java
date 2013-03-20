@@ -82,7 +82,7 @@ public class ReceptEngine {
 			BufferedReader br = new BufferedReader(new InputStreamReader(is,
 					"UTF-8"));
 			while ((newLine = br.readLine()) != null) {
-				String[] parts = newLine.split("|");
+				String[] parts = newLine.split("\\|");
 				PR pr = new PR();
 				pr.setIdP(parts[0]);
 				pr.setIdR(parts[1]);
@@ -106,7 +106,7 @@ public class ReceptEngine {
 			BufferedReader br = new BufferedReader(new InputStreamReader(is,
 					"UTF-8"));
 			while ((newLine = br.readLine()) != null) {
-				String[] parts = newLine.split("|");
+				String[] parts = newLine.split("\\|");
 				Product tp = new Product();
 				tp.setIdProduct(parts[0]);
 				tp.setNameProduct(parts[1]);
@@ -151,5 +151,13 @@ public class ReceptEngine {
 			return "G";
 		}
 		return null;
+	}
+	
+	public ArrayList<Recept> getRecepts(){
+		return arrayRecept;
+	}
+	
+	public ArrayList<Product> getProducts(){
+		return arrayProduct;
 	}
 }

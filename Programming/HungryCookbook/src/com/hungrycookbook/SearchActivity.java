@@ -1,21 +1,32 @@
 package com.hungrycookbook;
 
+import java.util.ArrayList;
+
 import Helpers.Sliding;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.Button;
-import android.widget.CheckBox;
+
+import com.Model.Product;
+import com.Model.ReceptEngine;
 
 public class SearchActivity extends Activity {
 
 	private boolean key = false;
+	AutoCompleteTextView productAutoComplete;
+	ArrayAdapter<String> productAutoCompleteAdapter;
+	private ReceptEngine engine;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_search);
+		
+		engine = ReceptEngine.getInstance(getAssets());
 
 		final Sliding popup = (Sliding) findViewById(R.id.sliding1);
 		popup.setVisibility(View.GONE);
@@ -36,6 +47,28 @@ public class SearchActivity extends Activity {
 				}
 			}
 		});
+
+		productAutoComplete = (AutoCompleteTextView) findViewById(R.id.productTextView);
+
+		String[] prodNames = productNames();
+		
+		
+		
+		//productAutoComplete.addTextChangedListener(getApplicationContext());
+
+		productAutoCompleteAdapter = new ArrayAdapter<String>(getApplicationContext(),
+				android.R.layout.simple_dropdown_item_1line, prodNames);
+
+		productAutoComplete.setAdapter(productAutoCompleteAdapter);
+	}
+
+	private String[] productNames() {
+		ArrayList<Product> products = engine.getProducts();
+		ArrayList<String> productNames = new ArrayList<String>();
+		for (Product product : products) {
+			productNames.add(product.getNameProduct());
+		}
+		return productNames.toArray(new String[productNames.size()]);
 	}
 
 	@Override
