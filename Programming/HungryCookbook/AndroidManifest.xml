@@ -14,26 +14,26 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.hungrycookbook.MainActivity"
-            android:label="@string/title_activity_main" >
+            android:label="@string/title_activity_main" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.hungrycookbook.CookbookActivity" >
+        <activity android:name="com.hungrycookbook.CookbookActivity" android:screenOrientation="portrait">
         </activity>
         <activity
             android:name="com.hungrycookbook.InfoActivity"
-            android:label="@string/title_activity_info" >
+            android:label="@string/title_activity_info" android:screenOrientation="portrait">
         </activity>
         <activity
             android:name="com.hungrycookbook.SearchActivity"
-            android:label="@string/title_activity_search" >
+            android:label="@string/title_activity_search" android:screenOrientation="portrait">
         </activity>
         <activity
             android:name="com.hungrycookbook.AnotherCookbookActivity"
-            android:label="@string/title_activity_another_cookbook" >
+            android:label="@string/title_activity_another_cookbook" android:screenOrientation="portrait">
         </activity>
     </application>
 

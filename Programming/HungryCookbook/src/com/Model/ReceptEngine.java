@@ -6,8 +6,6 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
-import com.hungrycookbook.R;
-
 import android.content.res.AssetManager;
 
 public class ReceptEngine {
@@ -132,8 +130,64 @@ public class ReceptEngine {
 		}
 		return rl;
 	}
-	
-	public String digitToStringRT(int digit){
+
+	public Product getProductByName(String name) {
+		for (Product prod : arrayProduct) {
+			if (prod.getNameProduct().equals(name)) {
+				return prod;
+			}
+		}
+		return null;
+	}
+
+	// TODO: самый-самый главный метод
+	public ArrayList<ReceptWithPriority> findRecepts(ArrayList<Product> products) {
+		ArrayList<ReceptWithPriority> receptsWPArray = new ArrayList<ReceptWithPriority>();
+		for (Recept recept : arrayRecept) {
+			double inrgCount = getMainIngridientsCount(recept.getIdRecept());
+			double findIngrCount = 0;
+			double prio = 0;
+			for (Product product : products) {
+				for (String productID : getIngridients(recept.getIdRecept())) {
+					if (productID.equals(product.getIdProduct())) {
+						findIngrCount++;
+					}
+				}
+			}
+			prio = findIngrCount / inrgCount * 100;
+			ReceptWithPriority rwp = new ReceptWithPriority(recept, prio);
+			//rwp.setPrior(findIngrCount / inrgCount * 100);
+			receptsWPArray.add(rwp);
+
+		}
+
+		return receptsWPArray;
+	}
+
+	private ArrayList<String> getIngridients(String idRecept) {
+		ArrayList<String> ingridients = new ArrayList<String>();
+		for (PR pr : arrayPR) {
+			if (idRecept.equals(pr.getIdR())) {
+				ingridients.add(pr.getIdP());
+			}
+		}
+		return ingridients;
+	}
+
+	private double getMainIngridientsCount(String IDRecept) {
+		int counter = 0;
+		for (PR pr : arrayPR) {
+			String prgetIdR = pr.getIdR();
+			//if (new String(IDRecept).intern() == new String(pr.getIdR()).intern()) {
+			if (pr.getIdR().equals(IDRecept)) {
+				counter++;
+			}
+		}
+
+		return counter;
+	}
+
+	public String digitToStringRT(int digit) {
 		switch (digit) {
 		case 0:
 			return "A";
@@ -152,12 +206,13 @@ public class ReceptEngine {
 		}
 		return null;
 	}
-	
-	public ArrayList<Recept> getRecepts(){
+
+	public ArrayList<Recept> getRecepts() {
 		return arrayRecept;
 	}
-	
-	public ArrayList<Product> getProducts(){
+
+	public ArrayList<Product> getProducts() {
 		return arrayProduct;
 	}
+
 }
