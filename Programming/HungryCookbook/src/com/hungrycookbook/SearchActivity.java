@@ -97,7 +97,7 @@ public class SearchActivity extends Activity {
 	}
 
 	private void newItemProduce() {
-		productAutoComplete.setOnItemClickListener(new OnItemClickListener() {
+		productAutoComplete.setOnItemClickListener(new OnItemClickListener() {	
 
 			@Override
 			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
