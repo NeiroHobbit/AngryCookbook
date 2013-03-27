@@ -1,6 +1,10 @@
 package com.Model;
 
-public class ReceptWithPriority extends Recept{
+import java.io.Serializable;
+
+import android.os.Parcelable;
+
+public class ReceptWithPriority extends Recept implements Serializable{
 	private double prior = 0;
 	
 	public ReceptWithPriority(Recept receptPapa, double pr){

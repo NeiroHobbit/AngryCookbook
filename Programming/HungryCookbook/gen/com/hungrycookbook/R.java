@@ -26,38 +26,42 @@ public final class R {
         public static final int logo=0x7f020002;
     }
     public static final class id {
-        public static final int action_settings=0x7f080021;
+        public static final int action_settings=0x7f080025;
         public static final int activity_main_layout=0x7f080005;
-        public static final int button_cookbook=0x7f080018;
-        public static final int button_else=0x7f080019;
-        public static final int button_info=0x7f08001a;
-        public static final int button_search=0x7f080017;
-        public static final int check1=0x7f08000a;
-        public static final int check2=0x7f08000b;
-        public static final int check3=0x7f08000c;
-        public static final int check4=0x7f08000d;
-        public static final int check5=0x7f08000e;
-        public static final int check6=0x7f08000f;
-        public static final int check7=0x7f080010;
+        public static final int activity_search_layout=0x7f080009;
+        public static final int button_cookbook=0x7f080019;
+        public static final int button_else=0x7f08001a;
+        public static final int button_info=0x7f08001b;
+        public static final int button_search=0x7f080018;
+        public static final int check1=0x7f08000b;
+        public static final int check2=0x7f08000c;
+        public static final int check3=0x7f08000d;
+        public static final int check4=0x7f08000e;
+        public static final int check5=0x7f08000f;
+        public static final int check6=0x7f080010;
+        public static final int check7=0x7f080011;
         public static final int companyNameTitle=0x7f080008;
-        public static final int listStack=0x7f08001d;
+        public static final int fr_s_res=0x7f08001f;
+        public static final int listResult=0x7f080021;
+        public static final int listStack=0x7f08001e;
         public static final int listView_types=0x7f080002;
         public static final int loadTitle=0x7f080007;
-        public static final int menu_exit=0x7f080020;
-        public static final int menu_same1=0x7f08001e;
-        public static final int menu_same2=0x7f08001f;
+        public static final int menu_exit=0x7f080024;
+        public static final int menu_same1=0x7f080022;
+        public static final int menu_same2=0x7f080023;
         public static final int pager=0x7f080000;
         public static final int pager_title_strip=0x7f080001;
-        public static final int productTextView=0x7f080013;
-        public static final int productsLayout=0x7f080014;
+        public static final int productTextView=0x7f080014;
+        public static final int productsLayout=0x7f080015;
         public static final int sacrLogo=0x7f080006;
-        public static final int scrollView1=0x7f08001c;
-        public static final int searchButton=0x7f080015;
-        public static final int searchL=0x7f080012;
-        public static final int section_label=0x7f080016;
-        public static final int show1=0x7f080011;
-        public static final int sliding1=0x7f080009;
-        public static final int textInfo2=0x7f08001b;
+        public static final int scrollView1=0x7f08001d;
+        public static final int scrollViewResult=0x7f080020;
+        public static final int searchButton=0x7f080016;
+        public static final int searchL=0x7f080013;
+        public static final int section_label=0x7f080017;
+        public static final int show1=0x7f080012;
+        public static final int sliding1=0x7f08000a;
+        public static final int textInfo2=0x7f08001c;
         public static final int textView1=0x7f080003;
         public static final int textView2=0x7f080004;
     }
@@ -70,12 +74,14 @@ public final class R {
         public static final int fragment_another_cookbook_dummy=0x7f030005;
         public static final int fragment_menu=0x7f030006;
         public static final int fragment_receptlist=0x7f030007;
+        public static final int fragment_search_result=0x7f030008;
     }
     public static final class menu {
         public static final int activity_main=0x7f070000;
         public static final int another_cookbook=0x7f070001;
         public static final int info=0x7f070002;
         public static final int search=0x7f070003;
+        public static final int search_result=0x7f070004;
     }
     public static final class string {
         public static final int action_settings=0x7f050005;
@@ -88,6 +94,7 @@ public final class R {
         public static final int title_activity_info=0x7f050004;
         public static final int title_activity_main=0x7f050003;
         public static final int title_activity_search=0x7f050008;
+        public static final int title_activity_search_result=0x7f050011;
         public static final int title_section1=0x7f05000a;
         public static final int title_section2=0x7f05000b;
         public static final int title_section3=0x7f05000c;

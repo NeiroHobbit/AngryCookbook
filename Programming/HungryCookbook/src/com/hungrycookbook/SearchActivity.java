@@ -5,8 +5,11 @@ import java.util.ArrayList;
 import Helpers.Sliding;
 import android.app.Activity;
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.view.Menu;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
@@ -19,17 +22,17 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.Model.Product;
-import com.Model.Recept;
 import com.Model.ReceptEngine;
 import com.Model.ReceptWithPriority;
 
-public class SearchActivity extends Activity {
+public class SearchActivity extends FragmentActivity {
 
 	private boolean key = false;
 	AutoCompleteTextView productAutoComplete;
 	ArrayAdapter<String> productAutoCompleteAdapter;
 	private ReceptEngine engine;
 	private Activity rootView;
+	private ArrayList<ReceptWithPriority> receptsWP;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -88,16 +91,31 @@ public class SearchActivity extends Activity {
 						prodList.add(nProd);
 					}
 				}
-				ArrayList<ReceptWithPriority> recepts = engine.findRecepts(prodList);
-				int a=0;
+				receptsWP = engine.findRecepts(prodList);
+				// Intent i = new Intent(rootView, SearchResultActivity.class);
+				// i.putExtra("SearchResultList", recepts);
+				// startActivity(i);
+
+				SearchResultFragment searchResultFragment = new SearchResultFragment();
+				FragmentManager fragmentManager = getSupportFragmentManager();
+				FragmentTransaction fragmentTransaction = fragmentManager
+						.beginTransaction();
+				fragmentTransaction.add(R.id.activity_search_layout,
+						searchResultFragment, "search");
+				fragmentTransaction.commit();
+				// searchResultFragment.setRecepts(recepts);
 
 			}
 		});
 
 	}
 
+	public ArrayList<ReceptWithPriority> getRec() {
+		return receptsWP;
+	}
+
 	private void newItemProduce() {
-		productAutoComplete.setOnItemClickListener(new OnItemClickListener() {	
+		productAutoComplete.setOnItemClickListener(new OnItemClickListener() {
 
 			@Override
 			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,

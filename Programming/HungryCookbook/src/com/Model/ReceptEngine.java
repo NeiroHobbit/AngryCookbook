@@ -156,18 +156,17 @@ public class ReceptEngine {
 			}
 			prio = findIngrCount / inrgCount * 100;
 			ReceptWithPriority rwp = new ReceptWithPriority(recept, prio);
-			//rwp.setPrior(findIngrCount / inrgCount * 100);
 			receptsWPArray.add(rwp);
 
 		}
-
+		// TODO: отсортировать по приоритету
 		return receptsWPArray;
 	}
 
 	private ArrayList<String> getIngridients(String idRecept) {
 		ArrayList<String> ingridients = new ArrayList<String>();
 		for (PR pr : arrayPR) {
-			if (idRecept.equals(pr.getIdR())) {
+			if (pr.getIdR().equals(idRecept)) {
 				ingridients.add(pr.getIdP());
 			}
 		}
