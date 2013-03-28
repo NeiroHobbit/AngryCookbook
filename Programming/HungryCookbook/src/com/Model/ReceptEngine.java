@@ -5,6 +5,9 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
 
 import android.content.res.AssetManager;
 
@@ -140,27 +143,40 @@ public class ReceptEngine {
 		return null;
 	}
 
-	// TODO: самый-самый главный метод
-	public ArrayList<ReceptWithPriority> findRecepts(ArrayList<Product> products) {
+	// TODO: сделать проверку на типы блюд
+	public ArrayList<ReceptWithPriority> findRecepts(
+			ArrayList<Product> products, ArrayList<String> receptTypes) {
 		ArrayList<ReceptWithPriority> receptsWPArray = new ArrayList<ReceptWithPriority>();
 		for (Recept recept : arrayRecept) {
-			double inrgCount = getMainIngridientsCount(recept.getIdRecept());
-			double findIngrCount = 0;
-			double prio = 0;
-			for (Product product : products) {
-				for (String productID : getIngridients(recept.getIdRecept())) {
-					if (productID.equals(product.getIdProduct())) {
-						findIngrCount++;
+			if (checkForOK(recept, receptTypes)) {
+				double inrgCount = getMainIngridientsCount(recept.getIdRecept());
+				double findIngrCount = 0;
+				double prio = 0;
+				for (Product product : products) {
+					for (String productID : getIngridients(recept.getIdRecept())) {
+						if (productID.equals(product.getIdProduct())) {
+							findIngrCount++;
+						}
 					}
 				}
+				prio = findIngrCount / inrgCount * 100;
+				ReceptWithPriority rwp = new ReceptWithPriority(recept, prio);
+				receptsWPArray.add(rwp);
 			}
-			prio = findIngrCount / inrgCount * 100;
-			ReceptWithPriority rwp = new ReceptWithPriority(recept, prio);
-			receptsWPArray.add(rwp);
 
 		}
-		// TODO: отсортировать по приоритету
+		// TODO: сделать сортировку
 		return receptsWPArray;
+	}
+
+	private boolean checkForOK(Recept recept, ArrayList<String> receptTypes) {
+		boolean isOK = false;
+		for (String type : receptTypes) {
+			if (type.equals(recept.getTypeRecept().substring(0, 1)))
+				isOK = true;
+		}
+
+		return isOK;
 	}
 
 	private ArrayList<String> getIngridients(String idRecept) {
@@ -177,7 +193,8 @@ public class ReceptEngine {
 		int counter = 0;
 		for (PR pr : arrayPR) {
 			String prgetIdR = pr.getIdR();
-			//if (new String(IDRecept).intern() == new String(pr.getIdR()).intern()) {
+			// if (new String(IDRecept).intern() == new
+			// String(pr.getIdR()).intern()) {
 			if (pr.getIdR().equals(IDRecept)) {
 				counter++;
 			}

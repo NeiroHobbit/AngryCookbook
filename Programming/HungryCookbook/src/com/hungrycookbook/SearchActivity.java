@@ -18,6 +18,7 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -91,7 +92,9 @@ public class SearchActivity extends FragmentActivity {
 						prodList.add(nProd);
 					}
 				}
-				receptsWP = engine.findRecepts(prodList);
+
+				ArrayList<String> receptTypes = getSelectedTypes();
+				receptsWP = engine.findRecepts(prodList, receptTypes);
 				// Intent i = new Intent(rootView, SearchResultActivity.class);
 				// i.putExtra("SearchResultList", recepts);
 				// startActivity(i);
@@ -108,6 +111,26 @@ public class SearchActivity extends FragmentActivity {
 			}
 		});
 
+	}
+
+	public ArrayList<String> getSelectedTypes() {
+		ArrayList<String> typesArray = new ArrayList<String>();
+		if (((CheckBox) rootView.findViewById(R.id.check1)).isChecked())
+			typesArray.add("A");
+		if (((CheckBox) rootView.findViewById(R.id.check2)).isChecked())
+			typesArray.add("B");
+		if (((CheckBox) rootView.findViewById(R.id.check3)).isChecked())
+			typesArray.add("C");
+		if (((CheckBox) rootView.findViewById(R.id.check4)).isChecked())
+			typesArray.add("D");
+		if (((CheckBox) rootView.findViewById(R.id.check5)).isChecked())
+			typesArray.add("E");
+		if (((CheckBox) rootView.findViewById(R.id.check6)).isChecked())
+			typesArray.add("F");
+		if (((CheckBox) rootView.findViewById(R.id.check7)).isChecked())
+			typesArray.add("G");
+
+		return typesArray;
 	}
 
 	public ArrayList<ReceptWithPriority> getRec() {

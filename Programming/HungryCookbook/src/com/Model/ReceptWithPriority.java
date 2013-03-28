@@ -23,4 +23,6 @@ public class ReceptWithPriority extends Recept implements Serializable{
 		this.prior = pror;
 	}
 	
+
+	
 }
