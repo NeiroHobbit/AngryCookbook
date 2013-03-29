@@ -18,6 +18,7 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.Model.Recept;
 import com.Model.ReceptEngine;
@@ -133,7 +134,7 @@ public class AnotherCookbookActivity extends FragmentActivity {
 		@Override
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
 				Bundle savedInstanceState) {
-			View rootView = inflater.inflate(R.layout.fragment_receptlist,
+			final View rootView = inflater.inflate(R.layout.fragment_receptlist,
 					container, false);
 			int m = getArguments().getInt(ARG_SECTION_NUMBER);
 			ReceptEngine engine = ReceptEngine.getInstance(getActivity()
@@ -143,15 +144,16 @@ public class AnotherCookbookActivity extends FragmentActivity {
 					.findViewById(R.id.listStack);
 
 			int padd = 5;
-			LinearLayout ll = new LinearLayout(getActivity());
-			ll.setOrientation(LinearLayout.VERTICAL);
-			ll.setPadding(padd, padd, padd, padd);
 
 			ArrayList<Recept> recepts = engine.getReceptsByType(engine
 					.digitToStringRT(m));
 
 			for (Recept recept : recepts) {
-				TextView tv1 = new TextView(getActivity());
+				LinearLayout ll = new LinearLayout(getActivity());
+				ll.setOrientation(LinearLayout.VERTICAL);
+				ll.setPadding(padd, padd, padd, padd);
+
+				final TextView tv1 = new TextView(getActivity());
 				tv1.setTypeface(null, Typeface.BOLD);
 				tv1.setText(recept.getNameRecept());
 				TextView tv2 = new TextView(getActivity());
@@ -175,9 +177,17 @@ public class AnotherCookbookActivity extends FragmentActivity {
 						TableRow.LayoutParams.MATCH_PARENT, 1));
 				v.setBackgroundColor(Color.rgb(51, 51, 51));
 				ll.addView(v);
-			}
+				ll.setOnClickListener(new View.OnClickListener() {
+					@Override
+					public void onClick(View v) {
 
-			linLay.addView(ll);
+						Toast toast = Toast.makeText(rootView.getContext(),
+								tv1.getText(), Toast.LENGTH_SHORT);
+						toast.show();
+					}
+				});
+				linLay.addView(ll);
+			}
 
 			return rootView;
 		}

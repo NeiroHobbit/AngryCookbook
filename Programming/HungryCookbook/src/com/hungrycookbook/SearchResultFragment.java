@@ -12,8 +12,8 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
+import android.widget.Toast;
 
-import com.Model.Recept;
 import com.Model.ReceptWithPriority;
 
 public class SearchResultFragment extends Fragment {
@@ -43,14 +43,15 @@ public class SearchResultFragment extends Fragment {
 				.findViewById(R.id.listResult);
 
 		int padd = 5;
-		LinearLayout ll = new LinearLayout(getActivity());
-		ll.setOrientation(LinearLayout.VERTICAL);
-		ll.setPadding(padd, padd, padd, padd);
 
 		for (ReceptWithPriority recept : recepts) {
 			// TODO: сделать красиво
 			if (recept.getPrior() > 0) {
-				TextView tv1 = new TextView(getActivity());
+				LinearLayout ll = new LinearLayout(getActivity());
+				ll.setOrientation(LinearLayout.VERTICAL);
+				ll.setPadding(padd, padd, padd, padd);
+
+				final TextView tv1 = new TextView(getActivity());
 				tv1.setTypeface(null, Typeface.BOLD);
 				tv1.setText(recept.getNameRecept());
 				TextView tv2 = new TextView(getActivity());
@@ -74,10 +75,19 @@ public class SearchResultFragment extends Fragment {
 						TableRow.LayoutParams.MATCH_PARENT, 1));
 				v.setBackgroundColor(Color.rgb(51, 51, 51));
 				ll.addView(v);
+
+				ll.setOnClickListener(new View.OnClickListener() {
+					@Override
+					public void onClick(View v) {
+						
+						Toast toast = Toast.makeText(rootView.getContext(),
+								tv1.getText(), Toast.LENGTH_SHORT);
+						toast.show();
+					}
+				});
+				linLay.addView(ll);
 			}
 		}
-
-		linLay.addView(ll);
 
 	}
 }
