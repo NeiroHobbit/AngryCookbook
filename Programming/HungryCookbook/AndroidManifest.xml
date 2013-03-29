@@ -45,6 +45,10 @@
             android:name="com.hungrycookbook.SearchResultActivity"
             android:label="@string/title_activity_search_result" >
         </activity>
+        <activity
+            android:name="com.hungrycookbook.ReaderActivity"
+            android:label="@string/title_activity_reader" >
+        </activity>
     </application>
 
 </manifest>

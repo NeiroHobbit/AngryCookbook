@@ -19,5 +19,6 @@
     <string name="title_section6">Соусы</string>
     <string name="title_section7">Десерты</string>
     <string name="title_activity_search_result">SearchResultActivity</string>
+    <string name="title_activity_reader">ReaderActivity</string>
 
 </resources>

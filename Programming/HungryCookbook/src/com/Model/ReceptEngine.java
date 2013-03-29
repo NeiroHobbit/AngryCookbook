@@ -193,14 +193,52 @@ public class ReceptEngine {
 		int counter = 0;
 		for (PR pr : arrayPR) {
 			String prgetIdR = pr.getIdR();
-			// if (new String(IDRecept).intern() == new
-			// String(pr.getIdR()).intern()) {
 			if (pr.getIdR().equals(IDRecept)) {
 				counter++;
 			}
 		}
 
 		return counter;
+	}
+
+	public String[] getReceptByNameForReader(String receptName) {
+		String[] rcp = new String[3];
+		Recept lookinRecept = new Recept();
+		for (Recept recept : arrayRecept) {
+			if (recept.getNameRecept().equals(receptName)) {
+				lookinRecept = recept;
+				break;
+			}
+		}
+		rcp[0] = lookinRecept.getNameRecept();
+
+		String ingredients = "";
+		for (PR rp : arrayPR) {
+			if (rp.getIdR().equals(lookinRecept.getIdRecept())) {
+				if (ingredients.length() > 0) {
+					ingredients += ", ";
+				}
+				ingredients += (getIngr(rp.getIdP(),
+						rp.getKolvo() + " " + rp.getEi())).toLowerCase();
+
+			}
+		}
+		rcp[1] = ingredients;
+		rcp[2] = lookinRecept.getTextRecept().replace("newline", " ");
+
+		return rcp;
+	}
+
+	private String getIngr(String idProd, String appendix) {
+		String result = "";
+		for (Product product : arrayProduct) {
+			if (product.getIdProduct().equals(idProd)) {
+				result = product.getNameProduct() + " " + appendix;
+				break;
+			}
+		}
+
+		return result;
 	}
 
 	public String digitToStringRT(int digit) {

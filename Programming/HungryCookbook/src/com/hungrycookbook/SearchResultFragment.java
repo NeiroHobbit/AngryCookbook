@@ -2,6 +2,7 @@ package com.hungrycookbook;
 
 import java.util.ArrayList;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -80,9 +81,10 @@ public class SearchResultFragment extends Fragment {
 					@Override
 					public void onClick(View v) {
 						
-						Toast toast = Toast.makeText(rootView.getContext(),
-								tv1.getText(), Toast.LENGTH_SHORT);
-						toast.show();
+						Intent i = new Intent(rootView.getContext(),
+								ReaderActivity.class);
+						i.putExtra("Recept_name", tv1.getText());
+						startActivity(i);
 					}
 				});
 				linLay.addView(ll);

@@ -3,6 +3,7 @@ package com.hungrycookbook;
 import java.util.ArrayList;
 import java.util.Locale;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -134,8 +135,8 @@ public class AnotherCookbookActivity extends FragmentActivity {
 		@Override
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
 				Bundle savedInstanceState) {
-			final View rootView = inflater.inflate(R.layout.fragment_receptlist,
-					container, false);
+			final View rootView = inflater.inflate(
+					R.layout.fragment_receptlist, container, false);
 			int m = getArguments().getInt(ARG_SECTION_NUMBER);
 			ReceptEngine engine = ReceptEngine.getInstance(getActivity()
 					.getAssets());
@@ -181,9 +182,9 @@ public class AnotherCookbookActivity extends FragmentActivity {
 					@Override
 					public void onClick(View v) {
 
-						Toast toast = Toast.makeText(rootView.getContext(),
-								tv1.getText(), Toast.LENGTH_SHORT);
-						toast.show();
+						Intent i = new Intent(rootView.getContext(), ReaderActivity.class);
+						i.putExtra("Recept_name", tv1.getText());
+						startActivity(i);
 					}
 				});
 				linLay.addView(ll);
