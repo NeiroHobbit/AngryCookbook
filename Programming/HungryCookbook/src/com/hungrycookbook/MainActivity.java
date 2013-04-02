@@ -11,6 +11,8 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 public class MainActivity extends FragmentActivity {
+	
+	// TODO: избавиться от всех Warning
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {

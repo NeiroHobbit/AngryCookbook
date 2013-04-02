@@ -21,6 +21,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.Model.Product;
 import com.Model.ReceptEngine;
@@ -34,6 +35,7 @@ public class SearchActivity extends FragmentActivity {
 	private ReceptEngine engine;
 	private Activity rootView;
 	private ArrayList<ReceptWithPriority> receptsWP;
+	private SearchResultFragment searchResultFragment;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -99,7 +101,7 @@ public class SearchActivity extends FragmentActivity {
 				// i.putExtra("SearchResultList", recepts);
 				// startActivity(i);
 
-				SearchResultFragment searchResultFragment = new SearchResultFragment();
+				searchResultFragment = new SearchResultFragment();
 				FragmentManager fragmentManager = getSupportFragmentManager();
 				FragmentTransaction fragmentTransaction = fragmentManager
 						.beginTransaction();
@@ -173,6 +175,22 @@ public class SearchActivity extends FragmentActivity {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.search, menu);
 		return true;
+	}
+
+	@Override
+	public void onBackPressed() {
+
+		// super.onBackPressed();
+		FragmentManager fragmentManager = getSupportFragmentManager();
+		if (searchResultFragment!=null) {
+			//SearchResultFragment srf = (SearchResultFragment) fragmentManager.findFragmentById(R.id.fr_s_res);
+			fragmentManager.beginTransaction().remove(searchResultFragment).commit();
+			searchResultFragment = null;
+		}
+		else{
+			super.onBackPressed();
+		}
+
 	}
 
 }

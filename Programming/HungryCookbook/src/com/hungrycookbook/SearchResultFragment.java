@@ -7,8 +7,10 @@ import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.View.OnKeyListener;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TableRow;
@@ -46,7 +48,6 @@ public class SearchResultFragment extends Fragment {
 		int padd = 5;
 
 		for (ReceptWithPriority recept : recepts) {
-			// TODO: сделать красиво
 			LinearLayout ll = new LinearLayout(getActivity());
 			ll.setOrientation(LinearLayout.VERTICAL);
 			ll.setPadding(padd, padd, padd, padd);
