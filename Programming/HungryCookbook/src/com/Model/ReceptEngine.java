@@ -143,12 +143,11 @@ public class ReceptEngine {
 		return null;
 	}
 
-	// TODO: сделать проверку на типы блюд
 	public ArrayList<ReceptWithPriority> findRecepts(
 			ArrayList<Product> products, ArrayList<String> receptTypes) {
 		ArrayList<ReceptWithPriority> receptsWPArray = new ArrayList<ReceptWithPriority>();
 		for (Recept recept : arrayRecept) {
-			if (checkForOK(recept, receptTypes)) {
+			if (checkForReceptType(recept, receptTypes)) {
 				double inrgCount = getMainIngridientsCount(recept.getIdRecept());
 				double findIngrCount = 0;
 				double prio = 0;
@@ -161,15 +160,16 @@ public class ReceptEngine {
 				}
 				prio = findIngrCount / inrgCount * 100;
 				ReceptWithPriority rwp = new ReceptWithPriority(recept, prio);
-				receptsWPArray.add(rwp);
+				if (rwp.getPrior() > 0) {
+					receptsWPArray.add(rwp);
+				}
 			}
 
 		}
-		// TODO: сделать сортировку
 		return receptsWPArray;
 	}
 
-	private boolean checkForOK(Recept recept, ArrayList<String> receptTypes) {
+	private boolean checkForReceptType(Recept recept, ArrayList<String> receptTypes) {
 		boolean isOK = false;
 		for (String type : receptTypes) {
 			if (type.equals(recept.getTypeRecept().substring(0, 1)))
