@@ -224,7 +224,7 @@ public class ReceptEngine {
 			}
 		}
 		rcp[1] = ingredients;
-		rcp[2] = lookinRecept.getTextRecept().replace("newline", " ");
+		rcp[2] = lookinRecept.getTextRecept().replace("newline", "\n");
 
 		return rcp;
 	}

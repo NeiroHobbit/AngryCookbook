@@ -5,11 +5,13 @@ import java.util.ArrayList;
 import Helpers.Sliding;
 import android.app.Activity;
 import android.content.Context;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.view.Gravity;
 import android.view.Menu;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
@@ -66,7 +68,7 @@ public class SearchActivity extends FragmentActivity {
 		});
 
 		productAutoComplete = (AutoCompleteTextView) findViewById(R.id.productTextView);
-
+		
 		String[] prodNames = productNames();
 
 		productAutoCompleteAdapter = new ArrayAdapter<String>(
@@ -147,9 +149,21 @@ public class SearchActivity extends FragmentActivity {
 					long arg3) {
 				LinearLayout prLayout = (LinearLayout) rootView
 						.findViewById(R.id.productsLayout);
+				
+				
+				
 				TextView prText = new TextView(rootView);
 				prText.setText(productAutoComplete.getText());
-				prLayout.addView(prText);
+				
+				LinearLayout horLay = new LinearLayout(rootView);
+				horLay.setOrientation(LinearLayout.HORIZONTAL);
+				Button delButton = new Button(rootView);
+				delButton.setText("aasdds");
+				horLay.addView(prText);
+				horLay.addView(delButton);
+				
+				//prLayout.addView(prText);
+				prLayout.addView(horLay);
 
 				productAutoComplete.setText("");
 				InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
